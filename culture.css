@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Courgette&family=Kaushan+Script&family=Lobster+Two:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body {
+        height: 150vh;
+        width: 100vw;
+        overflow-x: hidden;
+}
+header {
+    z-index: 1050;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    transition: 0.5s ease;
+    background: #05664f;
+}
+header .logo {
+    color: #fff;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+header .navigation {
+    position: relative;
+}
+header .navigation .navigation-items a {
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+}
+
+section h1 {
+    font-size: 2.3rem;
+    font-weight: 500px;
+    font-family: poppins;
+    color: #000;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+.animate-charcter
+{
+      background-image: linear-gradient(
+        -225deg,
+        #055844 10%,
+        #10c399 20%,
+        #49c962 50%,
+        #a8dc24 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3.5s linear infinite;
+      display: block;
+          font-size: 4rem;
+    }
+section h3 {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    text-decoration: underline;
+}
+section .main {
+    padding: 5px 40px;
+}
+
+section p {
+    line-height: 30px;
+    padding: 5px 55px;
+    color: #3C4747;
+}
+section .all-box {
+    padding: 10px 15px;
+    display: block;
+}
+.new-box {
+    width: 950px;
+    height: 225px;
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 0;
+    border-radius: 0px;
+    float: left;
+    border-spacing: 10px;
+}
+.new-year {
+    float: left;
+    width: 150px;
+    height: 200px;
+    display: block;
+    border-radius: 5px;
+    padding: 0 10px 0 0;
+}
+.wesak-box {
+    width: 1000px;
+    height: 225px;
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 0;
+    border-radius: 0px;
+    float: right;
+}
+.wesak {
+    float: right;
+    height: 200px;
+    width: 270px;
+    display: block;
+    border-radius: 5px;
+
+}
+.art-box {
+    width: 950px;
+    height: 385px;
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 0;
+    border-radius: 0px;
+    float:left;
+}
+.mask {
+    display: block;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    float: right;
+}
+.kandy {
+    width: 300px;
+    height: 200px;
+    display: block;
+    border-radius: 5px;
+    float: left;
+    padding: 0 10px 0 0;
+}
+.food-box {
+    width: 950px;
+    height: 230px;
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 0;
+    border-radius: 0px;
+    float:right;
+}
+.food {
+    width: 300px;
+    height: 200px;
+    display: block;
+    border-radius: 5px;
+    float: right;
+}
+.aurveda-box {
+    width: 950px;
+    height: 230px;
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 0;
+    border-radius: 0px;
+    float: left;
+}
+.ayurveda {
+    width: 300px;
+    height: 200px;
+    display: block;
+    border-radius: 5px;
+    float: left;  
+    padding: 0 10px 0 0;
+}
+
+
+
+footer {
+    background-color: var(--text-light);
+    color: var(--secondary-color);
+    background: #151515;
+    height: 250px;
+    margin: 0;
+    margin-left: 0;
+}
+
+footer .section__container img{
+    text-align: center;
+    height: 250px;
+    left: 30%;
+    position: absolute;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+    left: 52%;
+    top: 65px;
+}
+footer li {
+    color: #fff;
+    position: relative;
+    left: 55%;
+    top: 75px;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    padding: 5px 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        #055844 10%,
+        #10c399 20%,
+        #49c962 50%,
+        #a8dc24 );
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    footer .section__container img {
+        left: 15%;
+
+    }
+    .animate-charcter {
+        font-size: 3rem;
+    }
+    .new-box {
+        width: 530px;
+        height: 235px;
+    }
+    .wesak-box {
+        width: 550px;
+        height: 230px;
+    }
+    
+.wesak {
+    float: right;
+    height: 170px;
+}
+.art-box {
+    width: 530px;
+    height: 550px;
+}
+.mask {
+    display: block;
+    height: 150px;
+    width: 250px;
+}
+.kandy {
+    width: 250px;
+    height: 150px;
+}
+.food-box {
+    width: 550px;
+    height: 260px;
+}
+.food {
+    width: 230px;
+    height: 160px;
+}
+.aurveda-box {
+    width: 530px;
+    height: 230px;
+    display: none;
+}
+.ayurveda {
+    width: 250px;
+    height: 180px;
+}
+}

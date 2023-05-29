@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Courgette&family=Kaushan+Script&family=Lobster+Two:wght@700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'poppins' , sans-serif;
+
+
+}
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 1050;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    background-color: #05664f;
+    opacity: 0.9;
+    mix-blend-mode: overlay;
+}
+header .logo {
+    color: #fff;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+header .navigation {
+    position: relative;
+}
+header .navigation .navigation-items a {
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+
+.animate-charcter
+{
+  background-image: linear-gradient(
+    -225deg,
+    #055844 0%,
+    #10c399 29%,
+    #49c962 67%,
+    #a8dc24 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3.5s linear infinite;
+  display: block;
+      font-size: 4rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+section {
+    padding: 100px 40px;
+}
+section h1 {
+    font-size: 2.3rem;
+    font-weight: 500px;
+    font-family: poppins;
+    color: #000;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+section.post {
+    padding: 200px;
+    text-decoration: underline;
+}
+section h4 {
+    font-size: 1.2rem;
+    padding: 15px 15px;
+}
+section .Dutugamunu {
+    float: right;
+    width: 300px;
+    height: 200px;
+}
+.dutch {
+    float: left;
+    width: 300px;
+    height: 150px;
+    padding:0 10px 0 0;
+}
+.british {
+    float: right;
+    width: 300px;
+    height: 200px;
+    padding: 0 10px 0 0;
+}
+.Portugese{
+    float: right;
+    width: 200px;
+    height: 300px;
+}
+section p {
+    color: #3C4747;
+    line-height: 30px;
+}
+
+footer {
+    background-color: var(--text-light);
+    color: var(--secondary-color);
+    background: #151515;
+    height: 250px;
+    margin: 0;
+    margin-left: 0;
+}
+
+footer .section__container img{
+    text-align: center;
+    height: 250px;
+    left: 30%;
+    position: absolute;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+    left: 52%;
+    top: 65px;
+}
+footer li {
+    color: #fff;
+    position: relative;
+    left: 55%;
+    top: 75px;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    padding: 5px 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        #055844 10%,
+        #10c399 20%,
+        #49c962 50%,
+        #a8dc24 );
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    footer .section__container img {
+        left: 15%;
+
+    }
+    .animate-charcter {
+        font-size: 3rem;
+
+    }
+    section h1 {
+        font-size: 2.2rem;
+    }
+
+}
